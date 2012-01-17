@@ -18,11 +18,11 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=mysid BUILD_ID=ICL53F BUILD_FINGERP
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/jdk/proprietary/tuna/app/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/jdk/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/jdk/proprietary/tuna/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/jdk/proprietary/tuna/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-    vendor/jdk/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
+    vendor/jdk/proprietary/toro/app/Thinkfree.apk:system/app/Thinkfree.apk \
+    vendor/jdk/proprietary/toro/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/jdk/proprietary/toro/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/jdk/proprietary/toro/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    vendor/jdk/proprietary/toro/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
     vendor/jdk/proprietary/common/app/Microbes.apk:system/app/Microbes.apk \
     vendor/jdk/proprietary/common/app/Wallet.apk:system/app/Wallet.apk \
     vendor/jdk/proprietary/common/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
