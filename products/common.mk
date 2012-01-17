@@ -65,6 +65,9 @@ PRODUCT_COPY_FILES += \
     vendor/jdk/proprietary/common/app/VoiceSearch.apk:system/app/VoiceSearch.apk \
     vendor/jdk/proprietary/common/app/YouTube.apk:system/app/YouTube.apk
 
+# ringtones
+include vendor/jdk/products/common_ringtones.mk
+
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
