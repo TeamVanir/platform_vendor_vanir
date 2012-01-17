@@ -1,6 +1,3 @@
-# JDK
-$(call inherit-product, vendor/jdk/products/common.mk)
-
 # Audio Packages
 include frameworks/base/data/sounds/AllAudio.mk
 
