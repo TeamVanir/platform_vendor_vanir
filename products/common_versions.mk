@@ -3,6 +3,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=relea
 
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=BuglessBeast-$(shell date +"%m-%d-%y") \
-    ro.rommanager.developerid=pete
-
+    ro.modversion=JDK-X-$(shell date +"%m-%d-%y") \
+    ro.rommanager.developerid=jdkoreclipse
