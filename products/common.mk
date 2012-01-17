@@ -68,6 +68,9 @@ PRODUCT_COPY_FILES += \
 # ringtones
 include vendor/jdk/products/common_ringtones.mk
 
+# build prop mods
+include vendor/jdk/products/common_build_properties.mk
+
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
