@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/jdk/proprietary/common/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/jdk/proprietary/common/etc/permissions/features.xml:system/etc/permissions/features.xml \
     vendor/jdk/proprietary/common/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
+    vendor/jdk/proprietary/common/etc/init.d/placeholder:system/etc/init.d/placeholder \
     vendor/jdk/proprietary/common/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
     vendor/jdk/proprietary/common/lib/libflint_engine_jni_api.so:system/lib/libflint_engine_jni_api.so \
     vendor/jdk/proprietary/common/lib/libpicowrapper.so:system/lib/libpicowrapper.so \
@@ -58,8 +59,6 @@ PRODUCT_COPY_FILES += \
     vendor/jdk/proprietary/common/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
     vendor/jdk/proprietary/common/lib/libvoicesearch.so:system/lib/libvoicesearch.so \
     vendor/jdk/proprietary/common/xbin/su:system/xbin/su \
-    vendor/jdk/proprietary/common/xbin/bash:system/xbin/bash \
-    vendor/jdk/proprietary/common/xbin/nano:system/xbin/nano \
     vendor/jdk/proprietary/common/xbin/sysrw:system/xbin/sysrw \
     vendor/jdk/proprietary/common/xbin/sysro:system/xbin/sysro \
     vendor/jdk/proprietary/common/app/Gallery2.apk:system/app/Gallery2.apk \
