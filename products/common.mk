@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/jdk/proprietary/common/app/Talk.apk:system/app/Talk.apk \
     vendor/jdk/proprietary/common/app/talkback.apk:system/app/talkback.apk \
     vendor/jdk/proprietary/common/etc/contributors.css:system/etc/contributors.css \
+    vendor/jdk/proprietary/common/etc/terminfo.zip:system/etc/terminfo.zip \
     vendor/jdk/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/jdk/proprietary/common/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/jdk/proprietary/common/etc/permissions/features.xml:system/etc/permissions/features.xml \
@@ -57,6 +58,10 @@ PRODUCT_COPY_FILES += \
     vendor/jdk/proprietary/common/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
     vendor/jdk/proprietary/common/lib/libvoicesearch.so:system/lib/libvoicesearch.so \
     vendor/jdk/proprietary/common/xbin/su:system/xbin/su \
+    vendor/jdk/proprietary/common/xbin/bash:system/xbin/bash \
+    vendor/jdk/proprietary/common/xbin/nano:system/xbin/nano \
+    vendor/jdk/proprietary/common/xbin/sysrw:system/xbin/sysrw \
+    vendor/jdk/proprietary/common/xbin/sysro:system/xbin/sysro \
     vendor/jdk/proprietary/common/app/Gallery2.apk:system/app/Gallery2.apk \
     vendor/jdk/proprietary/common/app/Music.apk:system/app/Music.apk \
     vendor/jdk/proprietary/common/app/Videos.apk:system/app/Videos.apk \
@@ -67,7 +72,7 @@ PRODUCT_COPY_FILES += \
 include vendor/jdk/products/common_ringtones.mk
 
 # build prop mods
-include vendor/jdk/products/common_build_properties.mk
+include vendor/jdk/products/bp.mk
 
 
 # Enable SIP+VoIP on all targets
