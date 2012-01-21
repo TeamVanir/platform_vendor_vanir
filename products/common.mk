@@ -67,11 +67,57 @@ PRODUCT_COPY_FILES += \
     vendor/jdk/proprietary/common/app/VoiceSearch.apk:system/app/VoiceSearch.apk \
     vendor/jdk/proprietary/common/app/YouTube.apk:system/app/YouTube.apk
 
-# ringtones
-include vendor/jdk/products/common_ringtones.mk
+# Audio Packages
+include frameworks/base/data/sounds/AllAudio.mk
 
-# build prop mods
-include vendor/jdk/products/bp.mk
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Hydra.ogg \
+    ro.config.notification_sound=Proxima.ogg \
+    ro.config.alarm_alert=Alarm_Beep_03.ogg
+
+# Blobs necessary for face lock security
+PRODUCT_COPY_FILES +=  \
+    vendor/jdk/proprietary/common/app/FaceLock.apk:system/app/FaceLock.apk \
+    vendor/jdk/proprietary/common/lib/libfacelock_jni.so:system/lib/libfacelock_jni.so \
+    vendor/jdk/proprietary/common/lib/libfilterpack_facedetect.so:system/lib/libfilterpack_facedetect.so \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-r0-ri30.4a/full_model.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-r0-ri30.4a/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rn30-ri30.5/full_model.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rn30-ri30.5/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rp30-ri30.5/full_model.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rp30-ri30.5/full_model.bin \
+    vendor/jdk/proprietary/common/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin:system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin
+
+# Blobs necessary for drm
+PRODUCT_COPY_FILES +=  \
+    vendor/jdk/proprietary/common/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
+    vendor/jdk/proprietary/common/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
+    vendor/jdk/proprietary/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
+    vendor/jdk/proprietary/common/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+    vendor/jdk/proprietary/common/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/jdk/proprietary/common/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/jdk/proprietary/common/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/jdk/proprietary/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
+
+# Version information used on all builds
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
+
+# Build properties
+PRODUCT_PROPERTY_OVERRIDES += \
+     ro.modversion=JDK-X-$(shell date +"%m-%d-%y") \
+     ro.rommanager.developerid=jdkoreclipse \
+     ro.kernel.android.checkjni=0 \
+     windowsmgr.max_events_per_sec=240 \
+     wifi.supplicant_scan_interval=999 
 
 
 # Enable SIP+VoIP on all targets
