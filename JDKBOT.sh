@@ -13,6 +13,7 @@ ServerCD=$"public_html/mirror/rom/toro"
 "
 cd ~/android/system
 repo sync -j4
+# make installclean ######UNCOMMENT IF NEEDED! 
 . build/envsetup.sh && lunch 1
 make otapackage -j16
 cd $LCD 
