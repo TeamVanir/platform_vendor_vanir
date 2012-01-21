@@ -29,10 +29,5 @@ PRODUCT_COPY_FILES +=  \
     vendor/jdk/proprietary/common/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
     vendor/jdk/proprietary/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 
-# Inherit Face lock security blobs
--include vendor/jdk/products/common_facelock.mk
-
-# Inherit drm blobs
--include vendor/jdk/products/common_drm.mk
 
 
