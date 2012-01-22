@@ -20,6 +20,7 @@ echo "
 === Packing files. ===
 "
 cp ~/android/system/out/target/product/toro/jdk_toro-ota-eng.jdkoreclipse.zip  ~/android/system/out/target/product/toro/$PACKAGE
+md5sum ~/android/system/out/target/product/toro/$PACKAGE > ~/android/system/out/target/product/toro/$PACKAGE.md5sum
 
 echo " 
 === Uploading. ===
