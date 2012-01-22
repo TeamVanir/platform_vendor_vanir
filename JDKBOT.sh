@@ -3,7 +3,6 @@
 #Pull config from file.
 DATE=$( date +%m-%d-%Y_%H-%M-%S)
 HOST=$"jdkoreclipse.net"
-UPDIR=$"mirror/kernel/tuna"
 PACKAGE=$"jdkx_tuna_nightly_$DATE.zip"
 LCD=$"~/android/system/out/target/product/toro"
 ServerCD=$"public_html/mirror/rom/toro"
