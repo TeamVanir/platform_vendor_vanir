@@ -20,7 +20,6 @@ cd $LCD
 echo " 
 === Packing files. ===
 "
-rm ~/android/system/out/target/product/toro/$PACKAGE
 cp ~/android/system/out/target/product/toro/jdk_toro-ota-eng.jdkoreclipse.zip  ~/android/system/out/target/product/toro/$PACKAGE
 
 echo " 
