@@ -22,12 +22,9 @@ PRODUCT_COPY_FILES +=  \
     vendor/jdk/proprietary/toro/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/jdk/proprietary/toro/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/jdk/proprietary/toro/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-    vendor/jdk/proprietary/toro/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
-    vendor/jdk/proprietary/common/app/Microbes.apk:system/app/Microbes.apk \
     vendor/jdk/proprietary/common/app/Wallet.apk:system/app/Wallet.apk \
     vendor/jdk/proprietary/common/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
     vendor/jdk/proprietary/common/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
-    vendor/jdk/proprietary/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 
 
 
