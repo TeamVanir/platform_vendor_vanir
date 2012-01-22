@@ -12,7 +12,7 @@ ServerCD=$"public_html/mirror/rom/toro"
 "
 cd ~/android/system
 repo sync -j4
-git clone git@github.com:JDK-X/android-omap-tuna_3.0.git
+git clone https://jdkoreclipse@github.com/JDK-X/android-omap-tuna_3.0.git
 cd android-omap-tuna_3.0
 make tuna_defconfig
 make -j9 ARCH=arm CROSS_COMPILE=/home/jdkoreclipse/android/4.4.4/bin/arm-none-eabi-
