@@ -30,6 +30,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=relea
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
+    vendor/jdk/proprietary/common/app/jd.apk:system/app/jd.apk \
     vendor/jdk/proprietary/common/app/Calendar.apk:system/app/Calendar.apk \
     vendor/jdk/proprietary/common/app/CarHome.apk:system/app/CarHome.apk \
     vendor/jdk/proprietary/common/app/ChromeBookmarksSyncAdapter.apk:system/app/ChromeBookmarksSyncAdapter.apk \
