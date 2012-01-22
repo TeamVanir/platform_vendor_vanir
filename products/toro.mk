@@ -14,7 +14,7 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=mysid BUILD_ID=ICL53F BUILD_FINGERPRINT=google/mysid/toro:4.0.2/ICL53F/235179:user/release-keys PRIVATE_BUILD_DESC="mysid-user 4.0.2 ICL53F 235179 release-keys" BUILD_NUMBER=235179
 
 # Inherit common build.prop overrides
--include vendor/jdk/products/common_versions.mk
+#-include vendor/jdk/products/common_versions.mk
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
