@@ -5,7 +5,7 @@ DATE=$( date +%m-%d-%Y_%H-%M-%S)
 HOST=$"jdkoreclipse.net"
 PACKAGE=$"jdkx_tuna_build_$DATE.zip"
 LCD=$"~/android/system/out/target/product/toro"
-ServerCD=$"public_html/mirror/rom/toro"
+ServerCD=$"public_html/mirror/rom/toro/jdkx"
 
  echo "
  === Welcome to JDBOT! Build has initiated successfully! ===
