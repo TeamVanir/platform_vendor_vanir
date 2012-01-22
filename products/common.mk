@@ -57,12 +57,10 @@ PRODUCT_COPY_FILES += \
     vendor/jdk/proprietary/common/app/Talk.apk:system/app/Talk.apk \
     vendor/jdk/proprietary/common/app/talkback.apk:system/app/talkback.apk \
     vendor/jdk/proprietary/common/etc/contributors.css:system/etc/contributors.css \
-    vendor/jdk/proprietary/common/etc/terminfo.zip:system/etc/terminfo.zip \
     vendor/jdk/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/jdk/proprietary/common/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/jdk/proprietary/common/etc/permissions/features.xml:system/etc/permissions/features.xml \
     vendor/jdk/proprietary/common/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
-    vendor/jdk/proprietary/common/etc/init.d/placeholder:system/etc/init.d/placeholder \
     vendor/jdk/proprietary/common/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
     vendor/jdk/proprietary/common/lib/libflint_engine_jni_api.so:system/lib/libflint_engine_jni_api.so \
     vendor/jdk/proprietary/common/lib/libpicowrapper.so:system/lib/libpicowrapper.so \
