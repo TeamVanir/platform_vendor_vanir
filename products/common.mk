@@ -29,6 +29,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.media.enc.jpeg.quality=100 \
     pm.sleep_mode=1 \
     ro.ril.disable.power.collapse=0 \
+    ro.HOME_APP_ADJ=1 \
+    persist.adb.notify=0 \
     drm.service.enabled=true
 
 # Version information used on all builds
