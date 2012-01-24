@@ -18,12 +18,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Hydra.ogg \
     ro.config.notification_sound=Proxima.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
-     ro.modversion=JDK-X-$(shell date +"%m-%d-%Y_%H-%M-%S") \
-     ro.rommanager.developerid=jdkoreclipse \
-     ro.kernel.android.checkjni=0 \
-     windowsmgr.max_events_per_sec=240 \
-     wifi.supplicant_scan_interval=999 \
-     drm.service.enabled=true
+    ro.modversion=JDK-X-$(shell date +"%m-%d-%Y_%H-%M-%S") \
+    ro.rommanager.developerid=jdkoreclipse \
+    ro.kernel.android.checkjni=0 \
+    windowsmgr.max_events_per_sec=240 \
+    wifi.supplicant_scan_interval=999 \
+    debug.performance.tuning=1 \
+    video.accelerate.hw=1 \
+    debug.sf.hw=1 \
+    ro.media.enc.jpeg.quality=100 \
+    pm.sleep_mode=1 \
+    ro.ril.disable.power.collapse=0 \
+    drm.service.enabled=true
 
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
