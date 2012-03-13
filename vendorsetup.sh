@@ -1,2 +1,2 @@
-add_lunch_combo jdk_toro-userdebug
+add_lunch_combo ViciousAOSP_toro-userdebug
 
