@@ -1,0 +1,11 @@
+#!/system/bin/sh
+
+#Enable sysctl tweaks
+sysctl -p /system/etc/systctl.conf
+
+#Speed up file systems
+busybox mount -o remount,noatime,barrier=0,nobh /system
+busybox mount -o remount,noatime,barrier=0,nobh /data
+busybox mount -o remount,noatime,barrier=0,nobh /cache
+
+

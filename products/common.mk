@@ -18,7 +18,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Hydra.ogg \
     ro.config.notification_sound=Proxima.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
-    ro.modversion=ViciousAOSP-$(shell date +"%m-%d-%Y_%H-%M-%S") \
+    ro.modversion=ViciousAOSP-$(shell date +"%m-%d-%Y") \
     ro.rommanager.developerid=DroidVicious \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
@@ -41,11 +41,15 @@ PRODUCT_COPY_FILES += \
     vendor/vicious/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/vicious/proprietary/common/xbin/su:system/xbin/su \
     vendor/vicious/proprietary/common/xbin/sysrw:system/xbin/sysrw \
-    vendor/vicious/proprietary/common/xbin/sysro:system/xbin/sysro \
-    vendor/vicious/proprietary/common/app/Music.apk:system/app/Music.apk 
+    vendor/vicious/proprietary/common/xbin/sysro:system/xbin/sysro 
+
+#Initd
+PRODUCT_COPY_FILES +=  \
+vendor/vicious/proprietary/common/etc/init.d/99popcorn:system/etc/init.d/99popcorn \
+vendor/vicious/proprietary/common/etc/init.d/sysctl.conf:system/etc/sysctl.conf    
 
 # Audio Packages
-include frameworks/base/data/sounds/AllAudio.mk
+include frameworks/base/data/sounds/AudioPackage7.mk
 
 # Blobs necessary for drm
 PRODUCT_COPY_FILES +=  \
