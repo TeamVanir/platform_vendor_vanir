@@ -1,2 +1,2 @@
-add_lunch_combo ViciousAOSP_toro-userdebug
+add_lunch_combo vicious_toro-userdebug
 
