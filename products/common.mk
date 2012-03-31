@@ -41,20 +41,19 @@ PRODUCT_COPY_FILES += \
     vendor/vicious/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/vicious/proprietary/common/xbin/su:system/xbin/su \
     vendor/vicious/proprietary/common/xbin/sysrw:system/xbin/sysrw \
-    vendor/vicious/proprietary/common/xbin/sysro:system/xbin/sysro 
+    vendor/vicious/proprietary/common/xbin/sysro:system/xbin/sysro \
+    vendor/vicious/proprietary/common/xbin/busybox:system/xbin/busybox
 
 #Initd
 PRODUCT_COPY_FILES +=  \
 vendor/vicious/proprietary/common/etc/init.d/99popcorn:system/etc/init.d/99popcorn \
-vendor/vicious/proprietary/common/etc/init.d/sysctl.conf:system/etc/sysctl.conf    
+vendor/vicious/proprietary/common/etc/sysctl.conf:system/etc/sysctl.conf    
 
 # Audio Packages
 include frameworks/base/data/sounds/AudioPackage7.mk
 
 # Blobs necessary for drm
 PRODUCT_COPY_FILES +=  \
-    vendor/vicious/proprietary/common/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
-    vendor/vicious/proprietary/common/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
     vendor/vicious/proprietary/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
     vendor/vicious/proprietary/common/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/vicious/proprietary/common/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \

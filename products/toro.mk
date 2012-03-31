@@ -21,8 +21,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/vicious/proprietary/toro/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/vicious/proprietary/toro/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/vicious/proprietary/toro/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-    vendor/vicious/proprietary/common/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
-    vendor/vicious/proprietary/common/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
+
 
 
 
