@@ -48,6 +48,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=relea
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
     vendor/vicious/proprietary/common/app/GooManager.apk:system/app/GooManager.apk \
+    vendor/vicious/proprietary/common/app/PlayMusic.apk:system/app/PlayMusic.apk \
     vendor/vicious/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/vicious/proprietary/common/xbin/busybox:system/xbin/busybox \
     vendor/vicious/proprietary/common/xbin/su:system/xbin/su \
