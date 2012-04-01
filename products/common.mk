@@ -6,6 +6,7 @@ PRODUCT_DEVICE := generic
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/vicious/overlay/common
 
+# Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
@@ -18,8 +19,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Hydra.ogg \
     ro.config.notification_sound=Proxima.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
-    ro.modversion=ViciousAOSP-$(shell date +"%m-%d-%Y") \
-    ro.rommanager.developerid=DroidVicious \
+    ro.modversion=ViciousAOSP-$(shell date +"%m-%d-%Y") 
+
+# Goo-inside.me support 
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.goo.developerid=jdkoreclipse \
+   ro.goo.rom=ViciousAOSP \
+   ro.goo.version=$(shell date +"%m-%d-%Y") 
+
+# Tweaks
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=999 \
@@ -34,17 +43,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
 # Version information used on all builds
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_MST_DATE=$(shell date +"%s")
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
+    vendor/vicious/proprietary/common/app/GooManager.apk:system/app/GooManager.apk \
     vendor/vicious/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
+    vendor/vicious/proprietary/common/xbin/busybox:system/xbin/busybox \
     vendor/vicious/proprietary/common/xbin/su:system/xbin/su \
     vendor/vicious/proprietary/common/xbin/sysrw:system/xbin/sysrw \
-    vendor/vicious/proprietary/common/xbin/sysro:system/xbin/sysro \
-    vendor/vicious/proprietary/common/xbin/busybox:system/xbin/busybox
+    vendor/vicious/proprietary/common/xbin/sysro:system/xbin/sysro 
 
-#Initd
+#Init.d Scripts
 PRODUCT_COPY_FILES +=  \
 vendor/vicious/proprietary/common/etc/init.d/99popcorn:system/etc/init.d/99popcorn \
 vendor/vicious/proprietary/common/etc/sysctl.conf:system/etc/sysctl.conf    
