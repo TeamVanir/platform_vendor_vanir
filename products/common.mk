@@ -44,8 +44,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     video.accelerate.hw=1 \
     persist.sys.use_dithering=0 \
     persist.sys.purgeable_assets=1 \
-    ro.kernel.checkjni=0 \
-    drm.service.enabled=true
+    ro.kernel.checkjni=0
 
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
@@ -67,15 +66,6 @@ vendor/vicious/proprietary/common/etc/sysctl.conf:system/etc/sysctl.conf
 
 # Audio Packages
 include frameworks/base/data/sounds/AudioPackage7.mk
-
-# Blobs necessary for drm
-PRODUCT_COPY_FILES +=  \
-    vendor/vicious/proprietary/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
-    vendor/vicious/proprietary/common/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/vicious/proprietary/common/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/vicious/proprietary/common/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/vicious/proprietary/common/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    vendor/vicious/proprietary/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
