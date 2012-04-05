@@ -31,7 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
-    wifi.supplicant_scan_interval=999 \
+    wifi.supplicant_scan_interval=180 \
     debug.performance.tuning=1 \
     video.accelerate.hw=1 \
     debug.sf.hw=1 \
@@ -40,6 +40,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.disable.power.collapse=0 \
     ro.HOME_APP_ADJ=1 \
     persist.adb.notify=0 \
+    ro.telephony.call_ring.delay=0 \
+    video.accelerate.hw=1 \
+    persist.sys.use_dithering=0 \
+    persist.sys.purgeable_assets=1 \
+    ro.kernel.checkjni=0 \
     drm.service.enabled=true
 
 # Version information used on all builds
