@@ -25,7 +25,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.goo.developerid=jdkoreclipse \
    ro.goo.rom=ViciousAOSP \
-   ro.goo.version=$(shell date +"%m-%d-%Y") 
+   ro.goo.version=5
 
 # Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
