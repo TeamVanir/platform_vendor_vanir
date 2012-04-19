@@ -46,6 +46,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.purgeable_assets=1 \
     ro.kernel.checkjni=0
 
+#Bravia Engine Support 
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.service.swiqi.supported=true \
+persist.service.swiqi.enable=1
+
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
 
