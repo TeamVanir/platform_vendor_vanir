@@ -39,12 +39,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep_mode=1 \
     ro.ril.disable.power.collapse=0 \
     ro.HOME_APP_ADJ=1 \
+    ro.config.nocheckin=1 \
     persist.adb.notify=0 \
     ro.telephony.call_ring.delay=0 \
     video.accelerate.hw=1 \
     persist.sys.use_dithering=0 \
     persist.sys.purgeable_assets=1 \
-    ro.kernel.checkjni=0
+    ro.kernel.checkjni=0 \
+    net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960 \
+    net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960 \
+    net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960 \
+    net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960 \
+    net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960 \
+    media.stagefright.enable-meta=true \
+    media.stagefright.enable-scan=true \
+    media.stagefright.enable-http=true \
+    media.stagefright.enable-record=false 
 
 #Bravia Engine Support 
 PRODUCT_PROPERTY_OVERRIDES += \
