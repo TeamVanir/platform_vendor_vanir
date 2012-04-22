@@ -8,4 +8,9 @@ busybox mount -o remount,noatime,barrier=0,nobh /system
 busybox mount -o remount,noatime,barrier=0,nobh /data
 busybox mount -o remount,noatime,barrier=0,nobh /cache
 
+#Remove bugmailer on first boot....
+if [ -f /system/bin/bugmailer.sh ];
+     then
+     sysrw && rm system/bin/bugmailer.sh 
+fi
 
