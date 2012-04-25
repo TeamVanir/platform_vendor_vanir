@@ -1,0 +1,11 @@
+#!/system/bin/sh
+
+#Enable sysctl tweaks
+sysctl -p /system/etc/systctl.conf
+
+#Remove bugmailer on first boot
+if [ -f /system/bin/bugmailer.sh ];
+     then
+     sysrw && rm system/bin/bugmailer.sh 
+fi
+

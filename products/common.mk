@@ -19,13 +19,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Hydra.ogg \
     ro.config.notification_sound=Proxima.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
-    ro.modversion=ViciousAOSP-$(shell date +"%m-%d-%Y") 
-
+    ro.modversion=ViciousAOSP-v1.0.0
 # Goo-inside.me support 
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.goo.developerid=jdkoreclipse \
    ro.goo.rom=ViciousAOSP \
-   ro.goo.version=5
+   ro.goo.version=1000 
 
 # Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -39,8 +38,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep_mode=1 \
     ro.ril.disable.power.collapse=0 \
     ro.HOME_APP_ADJ=1 \
-    ro.config.nocheckin=1 \
-    persist.adb.notify=0 \
     ro.telephony.call_ring.delay=0 \
     video.accelerate.hw=1 \
     persist.sys.use_dithering=0 \
@@ -50,11 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960 \
     net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960 \
     net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960 \
-    net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960 \
-    media.stagefright.enable-meta=true \
-    media.stagefright.enable-scan=true \
-    media.stagefright.enable-http=true \
-    media.stagefright.enable-record=false 
+    net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
 
 #Bravia Engine Support 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -76,7 +69,7 @@ PRODUCT_COPY_FILES += \
 
 #Init.d Scripts
 PRODUCT_COPY_FILES +=  \
-vendor/vicious/proprietary/common/etc/init.d/99popcorn:system/etc/init.d/99popcorn \
+vendor/vicious/proprietary/common/etc/init.d/99popcorn:system/etc/init.d/99init \
 vendor/vicious/proprietary/common/etc/sysctl.conf:system/etc/sysctl.conf    
 
 # Audio Packages
