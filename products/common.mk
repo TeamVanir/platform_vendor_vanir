@@ -69,7 +69,7 @@ PRODUCT_COPY_FILES += \
 
 #Init.d Scripts
 PRODUCT_COPY_FILES +=  \
-vendor/vicious/proprietary/common/etc/init.d/99popcorn:system/etc/init.d/99init \
+vendor/vicious/proprietary/common/etc/init.d/99init:system/etc/init.d/99init \
 vendor/vicious/proprietary/common/etc/sysctl.conf:system/etc/sysctl.conf    
 
 # Audio Packages
