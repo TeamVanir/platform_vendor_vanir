@@ -1,2 +1,4 @@
 add_lunch_combo vicious_toro-userdebug
 add_lunch_combo vicious_maguro-userdebug
+add_lunch_combo vicious_crespo-userdebug
+add_lunch_combo vicious_crespo4g-userdebug

@@ -27,9 +27,9 @@ PRODUCT_COPY_FILES +=  \
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/vicious/proprietary/toro/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/vicious/proprietary/toro/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/vicious/proprietary/toro/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    vendor/vicious/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/vicious/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/vicious/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
 
 
 
