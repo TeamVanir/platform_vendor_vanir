@@ -19,12 +19,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Hydra.ogg \
     ro.config.notification_sound=Proxima.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
-    ro.modversion=ViciousAOSP-v1.0.0
+    ro.modversion=ViciousAOSP-$(shell date +"%m-%d-%Y") 
 # Goo-inside.me support 
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.goo.developerid=jdkoreclipse \
    ro.goo.rom=ViciousAOSP \
-   ro.goo.version=1000 
+   ro.goo.version=6
 
 # Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -55,7 +55,7 @@ ro.service.swiqi.supported=true \
 persist.service.swiqi.enable=1
 
 # Version information used on all builds
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IMM76D BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
