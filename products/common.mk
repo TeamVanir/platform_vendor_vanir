@@ -20,11 +20,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Proxima.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
     ro.modversion=ViciousAOSP-$(shell date +"%m-%d-%Y") 
-# Goo-inside.me support 
-PRODUCT_PROPERTY_OVERRIDES += \
-   ro.goo.developerid=jdkoreclipse \
-   ro.goo.rom=ViciousAOSP \
-   ro.goo.version=6
 
 # Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -59,7 +54,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IMM76D BUILD_VERSION_TAGS=relea
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
-    vendor/vicious/proprietary/common/app/GooManager.apk:system/app/GooManager.apk \
     vendor/vicious/proprietary/common/app/PlayMusic.apk:system/app/PlayMusic.apk \
     vendor/vicious/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/vicious/proprietary/common/xbin/busybox:system/xbin/busybox \
