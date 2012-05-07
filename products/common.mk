@@ -21,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
     ro.modversion=ViciousAOSP-$(shell date +"%m-%d-%Y") 
 
-# Tweaks
+# Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
