@@ -69,6 +69,15 @@ vendor/vicious/proprietary/common/etc/sysctl.conf:system/etc/sysctl.conf
 # Audio Packages
 include frameworks/base/data/sounds/AudioPackage7.mk
 
+# T-Mobile theme engine
+PRODUCT_PACKAGES += \
+       ThemeManager \
+       ThemeChooser \
+       com.tmobile.themes
+
+PRODUCT_COPY_FILES += \
+       vendor/vicious/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
