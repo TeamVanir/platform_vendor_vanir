@@ -73,6 +73,7 @@ include frameworks/base/data/sounds/AudioPackage7.mk
 PRODUCT_PACKAGES += \
        ThemeManager \
        ThemeChooser \
+       Androidian \
        com.tmobile.themes
 
 PRODUCT_COPY_FILES += \
