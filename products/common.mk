@@ -25,24 +25,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
-    wifi.supplicant_scan_interval=180 \
     debug.performance.tuning=1 \
     video.accelerate.hw=1 \
     debug.sf.hw=1 \
     ro.media.enc.jpeg.quality=100 \
     pm.sleep_mode=1 \
     ro.ril.disable.power.collapse=0 \
-    ro.HOME_APP_ADJ=1 \
     ro.telephony.call_ring.delay=0 \
     video.accelerate.hw=1 \
     persist.sys.use_dithering=0 \
     persist.sys.purgeable_assets=1 \
-    ro.kernel.checkjni=0 \
-    net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960 \
-    net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960 \
-    net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960 \
-    net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960 \
-    net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+    ro.kernel.checkjni=0 
 
 #Bravia Engine Support 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -63,8 +56,7 @@ PRODUCT_COPY_FILES += \
 
 #Init.d Scripts
 PRODUCT_COPY_FILES +=  \
-vendor/vicious/proprietary/common/etc/init.d/99init:system/etc/init.d/99init \
-vendor/vicious/proprietary/common/etc/sysctl.conf:system/etc/sysctl.conf    
+vendor/vicious/proprietary/common/etc/init.d/99init:system/etc/init.d/99init 
 
 # Audio Packages
 include frameworks/base/data/sounds/AudioPackage7.mk
