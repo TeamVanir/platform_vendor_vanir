@@ -33,8 +33,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.disable.power.collapse=0 \
     ro.telephony.call_ring.delay=0 \
     video.accelerate.hw=1 \
-    persist.sys.use_dithering=0 \
-    persist.sys.purgeable_assets=1 \
     ro.kernel.checkjni=0 
 
 #Bravia Engine Support 
