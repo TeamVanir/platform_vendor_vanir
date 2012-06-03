@@ -23,7 +23,7 @@ do
     renice -9 `pidof com.android.settings` # Settings menu
     renice -9 `pidof com.android.browser` # Browser app
     renice -9 `pidof com.android.vending` # Market app
-    renice -6 `pidof com.android.app.camera` # Camera app
+    renice -6 `pidof com.android.camera` # Camera app
     renice -6 `pidof com.google.android.youtube` # YouTube app
     renice -6 `pidof com.google.android.apps.maps` # Maps
     renice -3 `pidof android.process.acore`
