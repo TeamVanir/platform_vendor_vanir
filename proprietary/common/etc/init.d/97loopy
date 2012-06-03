@@ -1,0 +1,36 @@
+#!/system/bin/sh
+
+###### Loopy Smoothness Tweak for Galaxy S (Experimental) #######
+
+sleep 3
+renice 18 `pidof kswapd0` # please give credit and thanks to loopy for this line if it works
+
+##### Set nice levels for smoothness loop BEGIN #####
+### Let's loop this in the background for a bit
+for i in {1..20}
+do
+    sleep 5
+
+    ### Phone dialer app ###
+    renice -20 `pidof com.android.phone`
+
+    ### Launcher apps ###
+    renice -19 `pidof com.android.launcher2` # TouchWiz Launcher
+
+    ### System apps ###
+    renice -19 `pidof com.android.mms` # Text message app
+    renice -15 `pidof com.android.systemui` # Status bar
+    renice -9 `pidof com.android.settings` # Settings menu
+    renice -9 `pidof com.android.browser` # Browser app
+    renice -9 `pidof com.android.vending` # Market app
+    renice -6 `pidof com.android.app.camera` # Camera app
+    renice -6 `pidof com.google.android.youtube` # YouTube app
+    renice -6 `pidof com.google.android.apps.maps` # Maps
+    renice -3 `pidof android.process.acore`
+    renice -3 `pidof android.process.media`
+
+    ### Memory management kernel thread ###
+    renice 19 `pidof kswapd0` # please give credit and thanks to loopy for this line if it works
+done
+##### Set nice levels for smoothness loop END #####
+

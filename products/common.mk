@@ -33,7 +33,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.disable.power.collapse=0 \
     ro.telephony.call_ring.delay=0 \
     video.accelerate.hw=1 \
-    ro.kernel.checkjni=0 
+    ro.kernel.checkjni=0 \
+    net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960 \
+    net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960 \
+    net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960 \
+    net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
+    net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960 
 
 #Bravia Engine Support 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -54,7 +59,14 @@ PRODUCT_COPY_FILES += \
 
 #Init.d Scripts
 PRODUCT_COPY_FILES +=  \
-vendor/vicious/proprietary/common/etc/init.d/99init:system/etc/init.d/99init 
+vendor/vicious/proprietary/common/etc/init.d/99init:system/etc/init.d/99init \
+vendor/vicious/proprietary/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+vendor/vicious/proprietary/common/etc/init.d/97loopy:system/etc/init.d/97loopy 
+
+# Misc Files
+PRODUCT_COPY_FILES +=  \
+vendor/vicious/proprietary/common/etc/hosts:system/etc/hosts \
+vendor/vicious/proprietary/common/etc/resolv.conf:system/etc/resolv.conf 
 
 # Audio Packages
 include frameworks/base/data/sounds/AudioPackage7.mk
