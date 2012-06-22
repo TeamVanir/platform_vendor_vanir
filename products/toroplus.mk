@@ -2,10 +2,10 @@
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/vicious/products/common.mk)
+$(call inherit-product, vendor/vanir/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := vicious_toroplus
+PRODUCT_NAME := vanir_toroplus
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := toroplus
 PRODUCT_MODEL := Galaxy Nexus
@@ -18,18 +18,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Blobs necessary for drm
 PRODUCT_COPY_FILES +=  \
-    vendor/vicious/proprietary/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
-    vendor/vicious/proprietary/common/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/vicious/proprietary/common/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/vicious/proprietary/common/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/vicious/proprietary/common/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    vendor/vicious/proprietary/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/vanir/proprietary/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
+    vendor/vanir/proprietary/common/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+    vendor/vanir/proprietary/common/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/vanir/proprietary/common/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/vanir/proprietary/common/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/vanir/proprietary/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/vicious/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/vicious/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/vicious/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    vendor/vanir/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/vanir/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/vanir/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
 
 
 

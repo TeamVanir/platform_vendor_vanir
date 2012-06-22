@@ -1,9 +1,9 @@
-Team Vicious
+Team Vanir
 ===========
 
-Visit http://droidvicious.com
+Visit http://android-modders.com
 
-Follow http://twitter.com/ViciousBOT
+Follow http://twitter.com/TeamVanir
 
 Getting Started
 ---------------
@@ -12,7 +12,7 @@ Please see the [Android source page](http://source.android.com/source/index.html
 
 To initialize your local repository using my trees, use the following command:
 
-    repo init -u git://github.com/ViciousAOSP/platform_manifest.git -b ics
+    repo init -u git://github.com/TeamVanir/platform_manifest.git -b ics
 
 Then to sync up:
 

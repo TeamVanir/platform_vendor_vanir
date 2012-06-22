@@ -2,10 +2,10 @@
 $(call inherit-product, device/samsung/crespo4g/full_crespo4g.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/vicious/products/common.mk)
+$(call inherit-product, vendor/vanir/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := vicious_crespo4g
+PRODUCT_NAME := vanir_crespo4g
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := crespo4g
 PRODUCT_MODEL := Nexus S 4G
@@ -18,17 +18,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Blobs necessary for drm
 PRODUCT_COPY_FILES +=  \
-    vendor/vicious/proprietary/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
-    vendor/vicious/proprietary/common/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/vicious/proprietary/common/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/vicious/proprietary/common/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/vicious/proprietary/common/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    vendor/vicious/proprietary/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/vanir/proprietary/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
+    vendor/vanir/proprietary/common/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+    vendor/vanir/proprietary/common/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/vanir/proprietary/common/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/vanir/proprietary/common/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/vanir/proprietary/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
 
 # Copy crespo specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/vicious/proprietary/crespo/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/vicious/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd  \
-    vendor/vicious/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd 
+    vendor/vanir/proprietary/crespo/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/vanir/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd  \
+    vendor/vanir/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd 
 
 

@@ -1,5 +1,5 @@
-add_lunch_combo vicious_toro-userdebug
-add_lunch_combo vicious_toroplus-userdebug
-add_lunch_combo vicious_maguro-userdebug
-add_lunch_combo vicious_crespo-userdebug
-add_lunch_combo vicious_crespo4g-userdebug
+add_lunch_combo vanir_toro-userdebug
+add_lunch_combo vanir_toroplus-userdebug
+add_lunch_combo vanir_maguro-userdebug
+add_lunch_combo vanir_crespo-userdebug
+add_lunch_combo vanir_crespo4g-userdebug

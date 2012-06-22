@@ -1,10 +1,10 @@
 # Generic product
-PRODUCT_NAME := Vicious
-PRODUCT_BRAND := Vicious
+PRODUCT_NAME := Vanir
+PRODUCT_BRAND := Vanir
 PRODUCT_DEVICE := generic
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/vicious/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/vanir/overlay/common
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -19,7 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Hydra.ogg \
     ro.config.notification_sound=Proxima.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
-    ro.modversion=ViciousAOSP-$(shell date +"%m-%d-%Y") 
+    ro.modversion=Vanir-$(shell date +"%m-%d-%Y") 
 
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -50,23 +50,23 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IMM76D BUILD_VERSION_TAGS=relea
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
-    vendor/vicious/proprietary/common/app/PlayMusic.apk:system/app/PlayMusic.apk \
-    vendor/vicious/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/vicious/proprietary/common/xbin/busybox:system/xbin/busybox \
-    vendor/vicious/proprietary/common/xbin/su:system/xbin/su \
-    vendor/vicious/proprietary/common/xbin/sysrw:system/xbin/sysrw \
-    vendor/vicious/proprietary/common/xbin/sysro:system/xbin/sysro 
+    vendor/vanir/proprietary/common/app/PlayMusic.apk:system/app/PlayMusic.apk \
+    vendor/vanir/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
+    vendor/vanir/proprietary/common/xbin/busybox:system/xbin/busybox \
+    vendor/vanir/proprietary/common/xbin/su:system/xbin/su \
+    vendor/vanir/proprietary/common/xbin/sysrw:system/xbin/sysrw \
+    vendor/vanir/proprietary/common/xbin/sysro:system/xbin/sysro 
 
 #Init.d Scripts
 PRODUCT_COPY_FILES +=  \
-vendor/vicious/proprietary/common/etc/init.d/99init:system/etc/init.d/99init \
-vendor/vicious/proprietary/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-vendor/vicious/proprietary/common/etc/init.d/97loopy:system/etc/init.d/97loopy 
+vendor/vanir/proprietary/common/etc/init.d/99init:system/etc/init.d/99init \
+vendor/vanir/proprietary/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+vendor/vanir/proprietary/common/etc/init.d/97loopy:system/etc/init.d/97loopy 
 
 # Misc Files
 PRODUCT_COPY_FILES +=  \
-vendor/vicious/proprietary/common/etc/hosts:system/etc/hosts \
-vendor/vicious/proprietary/common/etc/resolv.conf:system/etc/resolv.conf 
+vendor/vanir/proprietary/common/etc/hosts:system/etc/hosts \
+vendor/vanir/proprietary/common/etc/resolv.conf:system/etc/resolv.conf 
 
 # Audio Packages
 include frameworks/base/data/sounds/AudioPackage7.mk
@@ -79,7 +79,7 @@ PRODUCT_PACKAGES += \
        com.tmobile.themes
 
 PRODUCT_COPY_FILES += \
-       vendor/vicious/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+       vendor/vanir/proprietary/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
